@@ -724,6 +724,7 @@ if ( ! class_exists( 'WC_Facebookcommerce_EventsTracker' ) ) :
 					'contents'     => wp_json_encode( $contents ),
 					'content_type' => $content_type,
 					'value'        => $order->get_total(),
+					'payment_method' => $order->get_payment_method(),
 					'currency'     => get_woocommerce_currency(),
 				],
 			];
